@@ -21,7 +21,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">Register</div>
         <div class="panel-body">
-            <form id="basicBootstrapForm" class="form-horizontal">
+            <form id="basicBootstrapForm" class="form-horizontal" method="post">
                 <div class="form-group">
                     <label class="col-xs-3 control-label">Email address</label>
                     <div class="col-xs-5">
@@ -66,7 +66,6 @@
 
 <script>
     $(document).ready(function() {
-        // Generate a simple captcha
         $('#basicBootstrapForm').bootstrapValidator({
             fields: {
                 email: {
